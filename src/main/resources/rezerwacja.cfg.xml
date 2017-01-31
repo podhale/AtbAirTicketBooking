@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.podhale.domain.Rezerwacja" table="rezerwacja">
+        <meta attribute="class-description">
+            Klasa zawiera rezerwacje lotów.
+        </meta>
+        <id name="id" type="int" column="ID">
+            <generator class="native" />
+        </id>
+        <property name="id_lotu" column="id_lotu" type="java.lang.String"/>
+        <property name="pesel" column="pesel" type="java.lang.String"/>
+        <property name="karta" column="karta" type="java.lang.String"/>
+        <property name="nazwisko" column="nazwisko" type="java.lang.String"/>
+        <property name="imie" column="imie" type="java.lang.String"/>
+        <property name="wylot" column="DATA_LOTU" type="java.lang.String"/>
+        <property name="przylot" column="DATA_POWROT" type="java.lang.String"/>
+        <property name="pasazerowie" column="pasazerowie" type="java.lang.String"/>
+
+    </class>
+
+
+</hibernate-mapping>

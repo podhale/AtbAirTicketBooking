@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.podhale.domain.Loty" table="loty">
+        <meta attribute="class-description">
+            Klasa zawiera lokalizacje lotnisk.
+        </meta>
+        <id name="id" type="java.lang.Long" column="ID">
+            <generator class="native" />
+        </id>
+        <property name="airline" column="AIRLINE" type="java.lang.String"/>
+        <property name="startAirport" column="START_AIRPORT" type="java.lang.String"/>
+        <property name="startTime" column="START_TIME" type="java.lang.String"/>
+        <property name="endAirport" column="END_AIRPORT" type="java.lang.String"/>
+        <property name="endTime" column="END_TIME" type="java.lang.String"/>
+        <property name="price" column="PRICE" type="int"/>
+
+    </class>
+
+
+</hibernate-mapping>
